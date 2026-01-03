@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Alert24 Frontend Internship Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Responsive Checkout Page
 
-## Available Scripts
+This project is a responsive checkout page developed as part of the Alert24 Frontend Internship Assignment. The application allows users to add traveller details, simulate thumbprint verification, calculate pricing dynamically, apply GST and coupon discounts, and view the final payable amount. The solution is completely frontend-based and does not use any backend services.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- React (Create React App)
+- JavaScript (ES6)
+- HTML5
+- CSS3 (Custom CSS, no external UI libraries)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Add multiple travellers (minimum one required)
+- Traveller form validation:
+  - Full name validation
+  - 10-digit contact number validation
+  - Mandatory thumbprint capture (simulated)
+- Travel date selection with past dates disabled
+- Explicit "Calculate Final Price" button to control billing
+- Dynamic pricing calculation based on valid travellers
+- GST calculation at 18% on ticket price
+- Coupon functionality:
+  - NEW10: ₹100 discount for minimum 2 travellers
+  - NEW20: ₹200 discount for minimum 4 travellers
+- Coupon input automatically converts input to uppercase
+- Responsive layout for mobile and desktop devices
+- UI styled to visually align with Alert24’s website design language
 
-### `npm test`
+## Pricing Logic
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Ticket price is ₹1000 per valid traveller
+- Life jacket price is ₹100 per valid traveller
+- GST is calculated as 18% of the total ticket price
+- Coupons are applied only if eligibility conditions are met
+- Only travellers with completed name, phone number, and thumbprint are considered for pricing
 
-### `npm run build`
+Final payable amount is calculated as:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ticket Total + GST + Life Jacket Cost − Discount
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Application Flow
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. User selects a valid travel date
+2. User adds one or more travellers
+3. Each traveller must enter name, contact number, and complete thumbprint capture
+4. User clicks "Calculate Final Price"
+5. Coupon input and available coupon details are displayed
+6. Final payable amount is shown
+7. Any change in traveller details resets the calculation to avoid incorrect billing
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+src/
+components/
+TravellerForm.jsx  
+PriceSummary.jsx  
+CouponInput.jsx  
+CouponInfo.jsx  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+App.jsx  
+index.js  
+sty.css  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Setup Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository
 
-## Learn More
+git clone <your-github-repository-link>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+cd alert24-checkout
 
-### Code Splitting
+3. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install
 
-### Analyzing the Bundle Size
+4. Start the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
+5. Open the application in the browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+http://localhost:3000
 
-### Advanced Configuration
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Thumbprint capture is simulated as per assignment instructions
+- No real biometric, Aadhaar, or sensitive personal data is collected
+- No backend APIs or databases are used
+- The Alert24 public background image is used for visual consistency, while all layout and CSS are custom-written
 
-### Deployment
+## Submission Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+GitHub Repository: <your-github-repository-link>  
+Live Demo (optional): <deployment-link>
 
-### `npm run build` fails to minify
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend Internship Assignment Submission  
+Alert24 Safety Systems

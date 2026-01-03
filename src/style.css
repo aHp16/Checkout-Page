@@ -1,0 +1,162 @@
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Base ===== */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #1c1c1c;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+/* ===== Header ===== */
+h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  color: #060b6b;
+  margin-bottom: 28px;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #e3e8ef;
+}
+
+/* ===== Headings ===== */
+.card h2,
+.card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0b3c5d;
+  margin-bottom: 12px;
+}
+
+/* ===== Labels ===== */
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 6px;
+}
+
+/* ===== Inputs ===== */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e0;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0b3c5d;
+  box-shadow: 0 0 0 1px rgba(11, 60, 93, 0.3);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b3c5d;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #092f48;
+}
+
+.btn:disabled {
+  background-color: #2e8cca;
+  cursor: not-allowed;
+}
+
+/* ===== Thumbprint ===== */
+.thumb {
+  width: 100%;
+  padding: 12px;
+  border: 1px dashed #94a3b8;
+  background: #f8fafc;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thumb.success {
+  background-color: #e6f4ea;
+  border-color: #2f855a;
+  color: #2f855a;
+  font-weight: 600;
+}
+
+/* ===== Errors ===== */
+.error {
+  font-size: 12px;
+  color: #c53030;
+  margin-bottom: 8px;
+}
+
+/* ===== Coupon Info ===== */
+.card ul {
+  padding-left: 18px;
+}
+
+.card ul li {
+  font-size: 14px;
+  color: #2d3748;
+  margin-bottom: 6px;
+}
+
+/* ===== Price Summary ===== */
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.summary hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 14px 0;
+}
+
+.summary h3 {
+  display: flex;
+  justify-content: space-between;
+  color: #0b3c5d;
+  font-size: 16px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .container {
+    margin: 16px auto;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
