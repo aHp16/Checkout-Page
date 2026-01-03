@@ -92,7 +92,7 @@ sty.css
 
 ### Final Output 
 ---
-LIVE DEMO : https://6958e922c793d88e15a09c19--bright-baklava-568e31.netlify.app/
+LIVE DEMO : https://checkout-page-sigma-henna.vercel.app/
 ---
 
 
