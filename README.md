@@ -64,41 +64,35 @@ App.jsx
 index.js  
 sty.css  
 
-## Setup Instructions
+## How to Run the Project
 
-1. Clone the repository
+1.  **Install Node.js**
+2.  **Clone the repository**
+    ```bash
+    https://github.com/aHp16/Checkout-Page.git
+    ```
+3.  **Open the project folder**
+    ```bash
+    cd Checkout-Page
+    ```
+4.  **Run the following commands:**
+    ```bash
+    npm install
+    npm start
+    ```
+5.  **Open the browser and go to:**
+    `http://localhost:3000`
 
-git clone <your-github-repository-link>
-
-2. Navigate to the project directory
-
-cd alert24-checkout
-
-3. Install dependencies
-
-npm install
-
-4. Start the development server
-
-npm start
-
-5. Open the application in the browser
-
-http://localhost:3000
-
-## Notes
+## Limitations
 
 - Thumbprint capture is simulated as per assignment instructions
 - No real biometric, Aadhaar, or sensitive personal data is collected
 - No backend APIs or databases are used
 - The Alert24 public background image is used for visual consistency, while all layout and CSS are custom-written
 
-## Submission Details
+### Final Output 
+---
+LIVE DEMO : https://6958e922c793d88e15a09c19--bright-baklava-568e31.netlify.app/
+---
 
-GitHub Repository: <your-github-repository-link>  
-Live Demo (optional): <deployment-link>
 
-## Author
-
-Frontend Internship Assignment Submission  
-Alert24 Safety Systems
